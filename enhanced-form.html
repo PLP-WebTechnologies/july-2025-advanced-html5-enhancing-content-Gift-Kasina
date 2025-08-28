@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enhanced HTML5 Content & Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+        <h1>HTML5 Content & Form Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#table">Table</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#form">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Lists Section -->
+        <section id="lists">
+            <h2>PLP MODULES</h2>
+            <ul>
+                <li>web Development</li>
+                <li>Python</li>
+                <li>Database Design</li>
+                <li>Startup Building</li>
+            </ul>
+            <h3>Software Development Life Cycle</h3>
+            <ol>
+                <li>Reqirements</li>
+                <li>Desing</li>
+                <li>Implementation</li>
+                <li>Testing</li>
+                <li>Deployment</li>
+                <li>Maintenance</li>
+            </ol>
+        </section>
+
+        <!-- Table Section -->
+        <section id="table">
+            <h2>Weekly Study Schedule</h2>
+            <table>
+                <caption></caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Module</th>
+                        <th>Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Web Development</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Python</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Revision</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Database Design</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Startup Building</td>
+                        <td>1</td>
+                    </tr>    
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media">
+            <h2>Media Showcase</h2>
+            <figure>
+                <img src="https://picsum.photos/200" alt="Placeholder Image" width="300" height="150">
+            </figure>
+            <audio controls>
+                <source src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" type="audio/mpeg">
+            </audio>
+            <video width="320" height="180" controls>
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <!-- Form Section -->
+        <section id="form">
+            <h2>Contact & Registration Form</h2>
+            <form autocomplete="on">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required minlength="2" placeholder="Your name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email">
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Details</legend>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{4,}" minlength="4" maxlength="12" placeholder="4-12 letters/numbers">
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="6" placeholder="At least 6 characters">
+
+                    <label for="confirm">Confirm Password:</label>
+                    <input type="password" id="confirm" name="confirm" required minlength="6" placeholder="Repeat password">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <label for="favlang">Favorite Module:</label>
+                    <select id="favlang" name="favlang" required>
+                        <option value="">Choose...</option>
+                        <option value="js">Web Development</option>
+                        <option value="py">Python</option>
+                        <option value="html">Database Desing</option>
+                        <option value="css">Startup Building</option>
+                    </select>
+
+                    <label>
+                        <input type="checkbox" name="newsletter" checked readonly>
+                        Subscribe to newsletter (mandatory)
+                    </label>
+
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </fieldset>
+
+                <label for="bio">Short Bio:</label>
+                <textarea id="bio" name="bio" rows="3" maxlength="200" placeholder="Tell us about yourself"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; week2 Web Development Assignment</p>
+    </footer>
+</body>
+</html>
